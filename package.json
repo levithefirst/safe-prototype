@@ -1,0 +1,11 @@
+{
+  "name": "safe-prototype",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "npm --prefix safe-creation-prototype ci && npm --prefix safe-creation-prototype run build",
+    "start": "npx --yes serve safe-creation-prototype/dist -l tcp://0.0.0.0:${PORT:-4173}"
+  }
+}

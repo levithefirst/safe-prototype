@@ -1,0 +1,6 @@
+{
+  "framework": "vite",
+  "installCommand": "npm --prefix safe-creation-prototype ci",
+  "buildCommand": "npm --prefix safe-creation-prototype run build",
+  "outputDirectory": "safe-creation-prototype/dist"
+}

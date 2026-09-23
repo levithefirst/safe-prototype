@@ -1,0 +1,6 @@
+[build]
+builder = "NIXPACKS"
+buildCommand = "npm --prefix safe-creation-prototype ci && npm --prefix safe-creation-prototype run build"
+
+[deploy]
+startCommand = "npx --yes serve safe-creation-prototype/dist -l tcp://0.0.0.0:${PORT:-4173}"
